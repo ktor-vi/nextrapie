@@ -1,0 +1,39 @@
+{
+  "name": "astrapie",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"pnpm dev:next\" \"pnpm dev:strapi\"",
+    "dev:strapi": "pnpm --filter strapi develop",
+    "dev:next": "pnpm --filter next dev",
+    "start": "concurrently \"pnpm start:next\" \"pnpm start:strapi\"",
+    "start:strapi": "pnpm --filter strapi start",
+    "start:next": "pnpm --filter next start",
+    "build": "pnpm build:strapi && pnpm build:next",
+    "build:strapi": "pnpm --filter strapi build",
+    "build:next": "pnpm --filter next build",
+    "lint": "pnpm --filter next lint",
+    "lint:fix": "pnpm --filter next lint:fix",
+    "lint:strict": "pnpm --filter next lint:strict",
+    "typecheck": "pnpm --filter next typecheck",
+    "test:watch": "pnpm --filter next test:watch",
+    "test:next": "pnpm --filter next test",
+    "format": "pnpm --filter next format",
+    "format:check": "pnpm --filter next format:check",
+    "postbuild": "pnpm --filter next postbuild",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "devDependencies": {
+    "commitlint": "^19.3.0",
+    "eslint": "^8.57.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.5.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "typescript": "^4.9.5",
+    "wait-on": "^7.2.0"
+  }
+}
