@@ -45,9 +45,9 @@ export function HeroSection({ data }: { readonly data: HeroSectionProps }) {
           {heading}
         </h1>
         <p className='mt-4 text-lg md:text-xl lg:text-2xl'>{subHeading}</p>
-          <ArrowLink key={arrowlink.id} href={arrowlink.url}>
-            {arrowlink.text}
-          </ArrowLink>
+        <ArrowLink key={arrowlink.id} href={arrowlink.url}>
+          {arrowlink.text}
+        </ArrowLink>
       </div>
     </>
   );

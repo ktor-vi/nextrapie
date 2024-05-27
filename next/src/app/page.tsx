@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import Head from 'next/head';
 import qs from 'qs';
 import * as React from 'react';
@@ -38,7 +38,11 @@ async function getStrapiData(url: string, query?: string) {
 
 export default async function Home() {
   const strapiData = await getStrapiData('/api/home-page', query);
-    if (!strapiData || !strapiData.heroSection || !strapiData.heroSection.length) {
+  if (
+    !strapiData ||
+    !strapiData.heroSection ||
+    !strapiData.heroSection.length
+  ) {
     return (
       <main>
         <p>Loading home page content...</p>
