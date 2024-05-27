@@ -17,7 +17,7 @@
     "lint:strict": "pnpm --filter next lint:strict",
     "typecheck": "pnpm --filter next typecheck",
     "test:watch": "pnpm --filter next test:watch",
-    "test:next": "pnpm --filter next test",
+    "test": "pnpm --filter next test",
     "format": "pnpm --filter next format",
     "format:check": "pnpm --filter next format:check",
     "postbuild": "pnpm --filter next postbuild",
