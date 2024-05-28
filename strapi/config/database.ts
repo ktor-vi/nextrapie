@@ -69,6 +69,7 @@ export default ({ env }) => {
         max: env.int('DATABASE_POOL_MAX', 10),
       },
     },
+  },
     sqlite: {
       connection: {
         filename: path.join(
@@ -81,7 +82,6 @@ export default ({ env }) => {
       useNullAsDefault: true,
     },
   };
-
   return {
     connection: {
       client,
