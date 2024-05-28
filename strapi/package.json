@@ -17,6 +17,7 @@
     "@strapi/strapi": "4.24.3",
     "@strapi/typescript-utils": "4.24.3",
     "better-sqlite3": "8.6.0",
+    "codemirror": "^6.0.1",
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.27",
     "pg": "^8.11.5",
