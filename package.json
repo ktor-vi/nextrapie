@@ -21,7 +21,6 @@
     "format": "pnpm --filter next format",
     "format:check": "pnpm --filter next format:check",
     "postbuild": "pnpm --filter next postbuild",
-    "prepare": "husky"
   },
   "dependencies": {
     "concurrently": "^7.6.0"
