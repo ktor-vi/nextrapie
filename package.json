@@ -20,7 +20,7 @@
     "test": "pnpm --filter next test",
     "format": "pnpm --filter next format",
     "format:check": "pnpm --filter next format:check",
-    "postbuild": "pnpm --filter next postbuild",
+    "postbuild": "pnpm --filter next postbuild"
   },
   "dependencies": {
     "concurrently": "^7.6.0"
