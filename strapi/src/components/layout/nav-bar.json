@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_layout_nav_bars",
+  "info": {
+    "displayName": "NavBar",
+    "icon": "code",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "custom.link"
+    }
+  }
+}

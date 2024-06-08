@@ -24,8 +24,9 @@ export interface CustomHeroSection extends Schema.Component {
   attributes: {
     heading: Attribute.String;
     subHeading: Attribute.String;
-    image: Attribute.Media & Attribute.Required;
+    deskImage: Attribute.Media & Attribute.Required;
     arrowlink: Attribute.Component<'custom.link'>;
+    mobileImage: Attribute.Media & Attribute.Required;
   };
 }
 
@@ -42,12 +43,26 @@ export interface CustomLink extends Schema.Component {
   };
 }
 
+export interface LayoutNavBar extends Schema.Component {
+  collectionName: 'components_layout_nav_bars';
+  info: {
+    displayName: 'NavBar';
+    icon: 'code';
+    description: '';
+  };
+  attributes: {
+    logo: Attribute.Media;
+    links: Attribute.Component<'custom.link', true>;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'custom.custom-field': CustomCustomField;
       'custom.hero-section': CustomHeroSection;
       'custom.link': CustomLink;
+      'layout.nav-bar': LayoutNavBar;
     }
   }
 }

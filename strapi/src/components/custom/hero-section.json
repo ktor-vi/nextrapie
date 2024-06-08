@@ -13,7 +13,7 @@
     "subHeading": {
       "type": "string"
     },
-    "image": {
+    "deskImage": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -26,6 +26,17 @@
       "type": "component",
       "repeatable": false,
       "component": "custom.link"
+    },
+    "mobileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
